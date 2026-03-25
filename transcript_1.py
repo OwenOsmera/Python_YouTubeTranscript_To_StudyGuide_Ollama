@@ -9,10 +9,10 @@ from youtube_transcript_api import YouTubeTranscriptApi
 
 outls = []
 
-tx = YouTubeTranscriptApi.get_transcript(okNT8swvV4xS06yO) 
+tx = YouTubeTranscriptApi().get_transcript("zODZ0i-Iark", languages=["en"]) 
 
 for i in tx:
-    outtxt = (i["text"]) #prevents it from being a json dictionary
+    outtxt = (i['text'])
     outls.append(outtxt)
 
     with open("op.txt", "a") as opf:
