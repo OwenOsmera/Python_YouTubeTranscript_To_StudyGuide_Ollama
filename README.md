@@ -1,5 +1,8 @@
 # Python_YouTubeTranscript_To_StudyGuide_Ollama
 
+# Key Notes:
+#### Unfrotuantly if the plalist for the program is not short enough you can get your ip blocked by youtubes api
+
 # Needed Installs
 -- pip install ollama
 -- pip install youtube-transcript-api
