@@ -14,8 +14,10 @@ DEFAULT_CONTEXT = """
 
 DEFAULT_MOD="phi3"
 
+DEFUALT_FILE = "AI_file.txt"
+
 # this function gets responses form the ai
-def get_response_from_ollama(user_input, context=DEFAULT_CONTEXT, model=DEFAULT_MOD):
+def get_response_from_ollama(user_input, context=DEFAULT_CONTEXT, model=DEFAULT_MOD, filename= DEFUALT_FILE):
     # context for our purposes
     
 
@@ -25,7 +27,12 @@ def get_response_from_ollama(user_input, context=DEFAULT_CONTEXT, model=DEFAULT_
 
     # Checks if the AI gave the user output
     if 'message' in ai_response:
-        return ai_response['message']['content']
+
+        # put the new infromation in a txt
+        with open(filename, 'w') as f:
+            f.write(ai_response['message']['content'])
+
+        return "Success"
     else:
         return 'Sorry something went wrong.'
     
@@ -34,6 +41,7 @@ def main():
     user_input = ""
     ai_response = ""
     model = "phi3"
+    file_name="Working.txt"
 
     # loop for testing the ai
     while(True):
