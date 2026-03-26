@@ -55,7 +55,7 @@ def main():
             break
 
         # Run it through ollama and save the output
-        ai_response = get_response_from_ollama(user_input, model)
+        ai_response = get_response_from_ollama(user_input, "teacher", model, file_name)
 
         # Return the output to the user
         print(ai_response)
