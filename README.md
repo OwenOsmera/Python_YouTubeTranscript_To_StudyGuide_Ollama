@@ -15,6 +15,7 @@
 
 ## Transcript File
 ### Pytube
+### youtube-transcript-api
 
 ## AI Loacal render
 ### Ollama
