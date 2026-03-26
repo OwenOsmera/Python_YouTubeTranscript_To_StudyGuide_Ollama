@@ -1,7 +1,7 @@
 # Python_YouTubeTranscript_To_StudyGuide_Ollama
 
 # Key Notes:
-#### Unfrotuantly if the plalist for the program is not short enough you can get your ip blocked by youtubes api
+#### Unfrotuantly if the playlist for the program is not short enough you can get your ip blocked by youtubes api since you are pretty much botting to get the infromation that you need.
 
 # Needed Installs
 -- pip install ollama
